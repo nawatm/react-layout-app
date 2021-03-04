@@ -1,13 +1,16 @@
 import React from 'react'
 
 const Cartitems = (props) => {
+
+    const {imgUrl,name,price,qty} = props.product
+
     return (
         <div className="card">
-            <img src={props.imgUrl} className="card-img-top" alt="" />
+            <img src={imgUrl} className="card-img-top" alt="" />
             <div className="card-body">
-                <h5 className="card-title">{props.name}</h5>
-                <p className="card-text">{props.price}</p>
-                <p className="card-text">{props.qty}</p>
+                <h5 className="card-title">{name}</h5>
+                <p className="card-text">{price}</p>
+                <p className="card-text">{qty}</p>
             </div>
         </div> 
     )
